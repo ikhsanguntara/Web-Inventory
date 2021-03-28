@@ -224,6 +224,7 @@ export default {
       {
         title: "Supplier",
         icon: "mdi-account-group",
+        link: "/supplier",
       },
       {
         title: "Items",
