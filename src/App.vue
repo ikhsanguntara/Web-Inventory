@@ -229,9 +229,9 @@ export default {
         title: "Items",
         icon: "mdi-folder",
         items: [
-          { title: "Satuan Barang", icon: "mdi-file", link: "" },
-          { title: "Jenis Barang", icon: "mdi-file", link: "" },
-          { title: "Data Barang", icon: "mdi-file", link: "" },
+          { title: "Unit Item", icon: "mdi-file", link: "/unit_item" },
+          { title: "Type Item", icon: "mdi-file", link: "/type_item" },
+          { title: "Data Item", icon: "mdi-file", link: "/data_item" },
         ],
       },
     ],
@@ -247,12 +247,14 @@ export default {
       {
         title: "Report",
         icon: "mdi-printer",
+        link: "/report",
       },
     ],
     users: [
       {
         title: "User Management",
         icon: "mdi-account-plus",
+        link:"/user"
       },
     ],
   }),
