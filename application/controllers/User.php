@@ -31,7 +31,7 @@ class User extends CI_Controller
         if ($mode == 'add') {
             $this->form_validation->set_rules('username', 'Username', 'required|trim|is_unique[user.username]|alpha_numeric');
             $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]');
-            $this->form_validation->set_rules('password', 'Password', 'required|min_length[3]|trim');
+            $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]|trim');
             $this->form_validation->set_rules('password2', 'Konfirmasi Password', 'matches[password]|trim');
         } else {
             $db = $this->admin->get('user', ['id_user' => $this->input->post('id_user', true)]);
